@@ -6,8 +6,7 @@
   <title>suslu22 — Projeler</title>
   <meta name="description" content="suslu22'nin yayındaki projeleri: tarayıcıda oynanan oyunlar ve ücretsiz uygulamalar.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0c0f1a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#1a1155">
   <meta property="og:type" content="website">
   <meta property="og:title" content="suslu22 — Projeler">
   <meta property="og:description" content="Tarayıcıda oynanan oyunlar ve ücretsiz uygulamalar.">
@@ -19,32 +18,42 @@
 <body>
   <a class="skip" href="#projeler">İçeriğe geç</a>
 
-  <header class="top">
-    <div class="wrap top-in">
-      <a class="brand" href="./" aria-label="suslu22 ana sayfa">
-        <img src="assets/icons/favicon.svg" alt="" width="32" height="32">
-        <span>suslu22</span>
-      </a>
-      <button class="theme" type="button" id="theme">
-        <span class="theme-ico" aria-hidden="true"></span>
-        <span class="theme-txt">Koyu tema</span>
-      </button>
+  <div class="stage">
+    <div class="stage-bg" aria-hidden="true">
+      <i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+      <i class="lines"></i>
     </div>
-  </header>
+
+    <header class="top">
+      <div class="wrap top-in">
+        <a class="brand" href="./" aria-label="suslu22 ana sayfa">
+          <img src="assets/icons/favicon.svg" alt="" width="40" height="40">
+        </a>
+        <button class="theme" type="button" id="theme">
+          <span class="theme-ico" aria-hidden="true"></span>
+          <span class="theme-txt">Koyu tema</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero wrap" aria-labelledby="baslik">
+      <div class="hero-text">
+        <h1 id="baslik">suslu22</h1>
+        <p class="hero-actions">
+          <a class="hbtn solid" href="#projeler">Projelere git <span aria-hidden="true">↓</span></a>
+          <a class="hbtn glass" href="https://github.com/suslu22" rel="noopener">GitHub profili <span aria-hidden="true">↗</span><span class="sr"> (yeni bağlantı)</span></a>
+        </p>
+      </div>
+      <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+    </section>
+  </div>
 
   <main>
-    <section class="hero wrap" aria-labelledby="baslik">
-      <p class="eyebrow">Kişisel proje sayfası</p>
-      <h1 id="baslik">suslu22</h1>
-      <p class="lead">Tarayıcıda oynanan oyunlar ve her cihazda çalışan ücretsiz uygulamalar. Aşağıda şu an yayında olan projeler var.</p>
-      <p class="hero-meta">
-        <span class="chip" id="count" aria-live="polite"></span>
-        <a class="plain" href="https://github.com/suslu22" rel="noopener">GitHub profili<span class="sr"> (yeni bağlantı)</span> <span aria-hidden="true">↗</span></a>
-      </p>
-    </section>
-
     <section class="wrap" id="projeler" aria-labelledby="projeler-baslik" tabindex="-1">
-      <h2 id="projeler-baslik">Projeler</h2>
+      <div class="sec-head">
+        <h2 id="projeler-baslik">Projeler</h2>
+        <span class="chip" id="count"></span>
+      </div>
       <div class="grid" id="grid">
         <noscript><p class="note">Proje kartlarını görmek için JavaScript gerekir. Projeler için <a href="https://github.com/suslu22?tab=repositories">GitHub depolarına</a> bakabilirsiniz.</p></noscript>
       </div>

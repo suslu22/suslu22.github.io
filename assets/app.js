@@ -87,6 +87,19 @@
     grid.appendChild(frag);
     var count = document.getElementById("count");
     count.textContent = list.length + " proje yayında";
+
+    // Hero süsü: projelerin logoları.
+    var art = document.getElementById("heroArt");
+    list.forEach(function (p) {
+      if (!p.icon) return;
+      var img = el("img");
+      img.src = p.icon;
+      img.alt = "";
+      img.width = 148;
+      img.height = 148;
+      img.decoding = "async";
+      art.appendChild(img);
+    });
   }
 
   // Tema: kayıtlı tercih yoksa sistem ayarı geçerlidir.
